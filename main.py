@@ -1,2 +1,8 @@
 def close10(x, y):
-    assert close10(6, 12) == 12
+    if abs(10 - x) < abs(10 - y):
+        return x
+    elif abs(10 - x) > abs(10 - y):
+        return y
+    else:
+        return(0)
+print(close10(14, 7))
